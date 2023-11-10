@@ -1,0 +1,99 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <tab name="Init" type="InitTab" active="false" scrollx="20.000000000000227" scrolly="9" scale="0.9">
+    <block xmlns="https://developers.google.com/blockly/xml" type="initSettings" id="}(};i]{]6]nQ#wpj~TgZ" x="-10" y="-10">
+      <field name="LOAD_COMP_ASSETS">FALSE</field>
+      <field name="FULLSCREEN">TRUE</field>
+      <field name="BKG_TRANSPARENCY">TRUE</field>
+      <field name="PRESERVE_DRAW_BUF">FALSE</field>
+      <field name="FADE_ANNOTATIONS">TRUE</field>
+    </block>
+  </tab>
+  <tab name="New Tab" type="CommonTab" active="true" scrollx="-156.9999485015869" scrolly="73.50000000000009" scale="1">
+    <block xmlns="https://developers.google.com/blockly/xml" type="show" id="OIS7~[Y^=^FFzcbd3pEd" x="210" y="30">
+      <value name="VALUE">
+        <shadow type="objectList" id="[waC|ZTQ;B}~]Px}W/yv">
+          <field name="FIELDNAME">Armature</field>
+        </shadow>
+      </value>
+      <next>
+        <block type="hide" id="yR2FSm2JH62U~%ykS{Z%">
+          <value name="VALUE">
+            <shadow type="objectList" id="dY@E7]2R=$w(vnTxtYuG">
+              <field name="FIELDNAME">Camera</field>
+            </shadow>
+          </value>
+          <next>
+            <block type="playAnimationAdv" id="b)pB7;4-^*c;Cu`_~:@l">
+              <mutation xmlns="http://www.w3.org/1999/xhtml" advplaybackoptions="true" enablewhenfinished="false"></mutation>
+              <field name="REVERSED">FALSE</field>
+              <field name="LOOP">AUTO</field>
+              <value name="VALUE">
+                <shadow type="animationList" id="=Nikl5N::8tr!6RZgq3A">
+                  <field name="FIELDNAME">Armature</field>
+                </shadow>
+              </value>
+              <value name="FROM">
+                <shadow type="math_number" id="rF!G0C+_K@Rc9;lH)SFu">
+                  <field name="NUM">0</field>
+                </shadow>
+              </value>
+              <value name="TO">
+                <shadow type="math_number" id="Y4Yg@6K=17{x$7dJCqLs">
+                  <field name="NUM">99</field>
+                </shadow>
+              </value>
+              <value name="SPEED">
+                <shadow type="math_number" id="t@U%BH)RTu;tmsR=1#,@">
+                  <field name="NUM">1</field>
+                </shadow>
+              </value>
+            </block>
+          </next>
+        </block>
+      </next>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="whenClicked" id=".*7qZg`EN4ir5MjAbKgj" inline="false" x="245" y="161">
+      <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false" enableifmissed="false"></mutation>
+      <field name="X_RAY">FALSE</field>
+      <field name="DOUBLE_CLICK">FALSE</field>
+      <field name="LEFT_BUTTON">TRUE</field>
+      <field name="MIDDLE_BUTTON">TRUE</field>
+      <field name="RIGHT_BUTTON">TRUE</field>
+      <value name="VALUE">
+        <shadow type="objectList" id="hnNdIDNMJumw$=v:raYm">
+          <field name="FIELDNAME">Ch14</field>
+        </shadow>
+      </value>
+      <statement name="DO">
+        <block type="stopAnimation" id="2+-.**{?4@$@=Jf]E$;v">
+          <value name="VALUE">
+            <shadow type="animationList" id="q5|$NnB6Q(/Q!eG;~Q0+">
+              <field name="FIELDNAME">Armature</field>
+            </shadow>
+          </value>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="playSound" id="tdX!|cWPn5h5]A0|Cx5=" x="310" y="250">
+      <field name="LOOP">FALSE</field>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="setShadowParam" id="].6F9b0KQ}t18^nzXgeD" x="470" y="290">
+      <field name="CAST_RECEIVE">CAST</field>
+      <field name="DO_WHAT">ENABLE</field>
+      <value name="TARGET">
+        <shadow type="objectList" id="1}v;oUn;!3J/5b61$cJz">
+          <field name="FIELDNAME">Armature</field>
+        </shadow>
+      </value>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="loadSoundAdv" id=")Ic7:D)Eln/z;^bI*?*W" x="370" y="430">
+      <field name="TYPE">SOUND</field>
+      <value name="URL">
+        <shadow type="text" id="RYQtOKM2bTiUHlPoNPMw">
+          <field name="TEXT">hello.mp3</field>
+        </shadow>
+      </value>
+    </block>
+  </tab>
+  <editorsettings viewport-x="903.5999999999999" viewport-y="37" viewport-w="614.4" viewport-h="357.5" viewport-hidden="false" toolbox-library-mode="false" toolbox-minimized-mode="false"></editorsettings>
+</xml>
